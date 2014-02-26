@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Laffayette;
+  src: url("../fonts/Laffayette_Comic_Pro.ttf"); 
+}
+
+h1 {
+	font-family: Laffayette;
+	color: white;
+	text-shadow: 2px 2px 4px pink;
+}
+
+label {
+	font-family: Laffayette;
+	color: white;
+}
+
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+body {
+	background: url('/img/glitter2.jpg') no-repeat center center fixed;
+	//background-image: url('/img/glitter.jpg');
+  	background-size: cover;
+	margin: 20px;
+}
+
+.tweet {
+	border-radius: 10px;
+	//border: 1px solid #666666;
+	background-color:rgba(255,255,255,.5);
+	padding: 10px;
+	margin: 10px 0;
+	max-width: 400px;
+}
+
+a:hover {
+	text-decoration: none;
+};

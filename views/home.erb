@@ -1,0 +1,9 @@
+<h1>Glitter!</h1>
+
+<% @tweets.each do |tweet| %>
+	<div class="tweet">
+		<div><em></em>
+		<a href="/<%= tweet.user.username %>">@<%= tweet.user.username %></a> &#183; <%= tweet.created_at.strftime('%b %e') %></div>
+		<div><%= tweet.content %></div>
+	</div>
+<% end %>
