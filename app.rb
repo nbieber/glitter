@@ -8,12 +8,12 @@ require './models'
 # enable :sessions
 # use Rack::Flash, :sweep => true
 
-set :database, "sqlite3:///flittr.sqlite3"
+set :database, "sqlite3:///glitter.sqlite3"
 set :sessions, true
 
 get '/' do
 	@tweets = Tweet.all
-	erb :home
+	erb :tweets
 end
 
 get '/:username' do
@@ -22,7 +22,7 @@ get '/:username' do
 		redirect '/'
 	end
 	@tweets = Tweet.where(:user_id => @page_user.id)
-	erb :home
+	erb :profile
 end
 
 get '/users/new' do

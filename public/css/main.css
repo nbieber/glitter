@@ -9,6 +9,11 @@ h1 {
 	text-shadow: 2px 2px 4px pink;
 }
 
+h1 a,
+h1 a:hover {
+	color: white;
+}
+
 label {
 	font-family: Laffayette;
 	color: white;
@@ -21,11 +26,11 @@ label {
 
 body {
 	background: url('/img/glitter2.jpg') no-repeat center center fixed;
-	//background-image: url('/img/glitter.jpg');
   	background-size: cover;
 	margin: 20px;
 }
 
+.profile,
 .tweet {
 	border-radius: 10px;
 	//border: 1px solid #666666;
@@ -33,6 +38,11 @@ body {
 	padding: 10px;
 	margin: 10px 0;
 	max-width: 400px;
+}
+
+
+.profile {
+	text-align: center;
 }
 
 a:hover {
