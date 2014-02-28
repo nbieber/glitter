@@ -5,6 +5,7 @@ gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'rake'
+gem 'rack-flash3' # allows us to send 'flash' messages on request
 
 group :development do
   	gem 'sqlite3'

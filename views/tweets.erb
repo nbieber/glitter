@@ -1,4 +1,4 @@
-<% @tweets.each do |tweet| %>
+<% @tweets.reverse.each do |tweet| %>
 	<div class="tweet">
 		<div><em></em>
 		<a href="/<%= tweet.user.username %>">@<%= tweet.user.username %></a> &#183; <%= tweet.created_at.strftime('%b %e') %></div>

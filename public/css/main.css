@@ -47,4 +47,8 @@ body {
 
 a:hover {
 	text-decoration: none;
-};
+}
+
+nav {
+	float: right;
+}

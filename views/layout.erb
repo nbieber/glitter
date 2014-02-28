@@ -8,10 +8,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-		<header>
-			<a href="/users/new" style="float: right;">Sign Up</a>
-		</header>
+		<nav class="navbar">
+			<% if !current_user %>
+				<a href="/users/new">Sign Up</a> 
+				<a href="/sessions/new">Sign In</a>
+			<% else %>
+				<%= current_user.username %>
+				<a href="/tweets/new">Tweet!</a>
+				<a href="/sessions/clear">Log Out</a>
+			<% end %>
+		</nav>
 		<div id="wrapper">
+			<% if flash[:notice] %>
+				<div class="flash-notice"><%= flash[:notice] %></div>
+			<% end %>
+			<% if flash[:error] %>
+				<div class="flash-error"><%= flash[:error] %></div>
+			<% end %>
 			<h1><a href="/">Glitter!</a></h1>
 			<%= yield %>
 		</div>
